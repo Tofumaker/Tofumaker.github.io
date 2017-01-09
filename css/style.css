@@ -16,7 +16,7 @@
    background: none;
    overflow: hidden;
    -webkit-transition: all 0.3s;
-   transition: all 0.3s;
+   transition: all 0.7s;
    opacity: 0;
    top: -100px;
    padding-bottom: 6px;
@@ -62,7 +62,9 @@
 
  nav {
    float: right;
-   width: 60%;
+   background-color: inherit;
+   width: 80%;
+   
  }
  @media only screen and (max-width: 766px) {
    nav {
@@ -178,7 +180,8 @@
    text-align: center;
    color: #fff;
    padding-top: 110px;
-   min-height: 50vw;
+   min-height: 100vh;
+
    letter-spacing: 2px;
    font-family: "Montserrat", sans-serif;
  }
@@ -214,7 +217,7 @@
    height: 2px;
    border-radius: 4px;
    background: #e8f380;
-   border: 1px solid transparent;
+   /*border: 1px solid transparent;*/
    -webkit-animation-duration: 1s;
    animation-duration: 1s;
    -webkit-animation-fill-mode: both;
