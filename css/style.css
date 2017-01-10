@@ -12,11 +12,9 @@
    max-height: 60px;
    z-index: 999;
    width: 100%;
-   /*padding-top: 17px;*/
-   background: none;
    overflow: hidden;
    -webkit-transition: all 0.3s;
-   transition: all 0.7s;
+   transition: all 0.4s;
    opacity: 0;
    top: -100px;
    padding-bottom: 6px;
@@ -179,6 +177,7 @@
    -moz-background-size: cover;
    background-size: cover;
    text-align: center;
+   transition: all 0.3s;
    color: #fff;
    padding-top: 110px;
    min-height: 100vh;
@@ -196,6 +195,10 @@
    border-bottom: 2px solid #e8f380;
    padding-bottom: 12px;
    line-height: 3;
+ }
+
+ .blur-image {
+   filter: blur(2px);
  }
 
  .mouse {
