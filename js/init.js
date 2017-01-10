@@ -10,8 +10,10 @@ $(window).scroll(function() {
 
     if ($(window).scrollTop() > 200) {
         $('.main_h').addClass('sticky');
+        $('.hero').addClass('blur-image')
     } else {
         $('.main_h').removeClass('sticky');
+        $('.hero').removeClass('blur-image');
     }
 });
 
