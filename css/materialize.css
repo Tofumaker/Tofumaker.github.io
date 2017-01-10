@@ -4122,12 +4122,14 @@ nav ul li.active {
 }
 
 nav ul a {
-  transition: background-color .3s;
+  transition: background-color 0.3s, padding 0.3s;
   font-size: 1rem;
   color: #fff;
   display: block;
-  padding: 0 15px;
+  text-align: center;
+  padding: 17px 15px;
   cursor: pointer;
+  height: 70px;
 }
 
 nav ul a.btn, nav ul a.btn-large, nav ul a.btn-large, nav ul a.btn-flat, nav ul a.btn-floating {
@@ -4138,6 +4140,7 @@ nav ul a.btn, nav ul a.btn-large, nav ul a.btn-large, nav ul a.btn-flat, nav ul 
 
 nav ul a:hover {
   background-color: rgba(0, 0, 0, 0.1);
+  padding: 25px 15px;
 }
 
 nav ul.left {
