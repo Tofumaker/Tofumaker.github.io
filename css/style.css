@@ -12,11 +12,9 @@
    max-height: 60px;
    z-index: 999;
    width: 100%;
-   /*padding-top: 17px;*/
-   background: none;
    overflow: hidden;
    -webkit-transition: all 0.3s;
-   transition: all 0.7s;
+   transition: all 0.4s;
    opacity: 0;
    top: -100px;
    padding-bottom: 6px;
