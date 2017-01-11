@@ -18,7 +18,7 @@ $(window).scroll(function() {
 
     if ($(window).scrollTop() > 250) {
         $('.welcome-message').removeClass('welcome-hide');
-        $('.hero').addClass('blur-image')
+        $('.hero').addClass('blur-image');
     } else {
         $('.welcome-message').addClass('welcome-hide');
         $('.hero').removeClass('blur-image');
