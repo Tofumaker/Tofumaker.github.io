@@ -8,12 +8,45 @@
   // Sticky Header
 $(window).scroll(function() {
 
-    if ($(window).scrollTop() > 200) {
+    if ($(window).scrollTop() > 100) {
         $('.main_h').addClass('sticky');
-        $('.hero').addClass('blur-image')
+
     } else {
         $('.main_h').removeClass('sticky');
+
+    }
+
+    if ($(window).scrollTop() > 250) {
+        $('.welcome-message').removeClass('welcome-hide');
+        $('.hero').addClass('blur-image')
+    } else {
+        $('.welcome-message').addClass('welcome-hide');
         $('.hero').removeClass('blur-image');
+    }
+
+    if ($(window).scrollTop() > 400) {
+        $('#army-job').removeClass('welcome-hide');
+
+    } else {
+        $('#army-job').addClass('welcome-hide');
+    }
+
+    if ($(window).scrollTop() > 480) {
+        $('#college-job').removeClass('welcome-hide');
+    } else {
+        $('#college-job').addClass('welcome-hide');
+    }
+
+    if ($(window).scrollTop() > 590) {
+        $('#marketer-job').removeClass('welcome-hide');
+    } else {
+        $('#marketer-job').addClass('welcome-hide');
+    }
+
+    if ($(window).scrollTop() > 680) {
+        $('#programmer-job').removeClass('welcome-hide');
+    } else {
+        $('#programmer-job').addClass('welcome-hide');
     }
 });
 
@@ -36,11 +69,11 @@ $('.main_h li a').click(function() {
 // navigation scroll lijepo radi materem
 $('nav a').click(function(event) {
     var id = $(this).attr("href");
-    var offset = 70;
+    var offset = 40;
     var target = $(id).offset().top - offset;
     $('html, body').animate({
         scrollTop: target
-    }, 500);
+    }, 400);
     event.preventDefault();
 });
 })(jQuery); // end of jQuery name space
