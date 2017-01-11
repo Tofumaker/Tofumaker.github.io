@@ -2,6 +2,8 @@
   $(function(){
     $('.button-collapse').sideNav();
     $('.parallax').parallax();
+    $('#bucketlistgif').freezeframe();
+    $('#bucketlistgif2').freezeframe();
   }); // end of document ready
   // Sticky Header
 $(window).scroll(function() {
@@ -22,7 +24,6 @@ $(window).scroll(function() {
 
     if ($(window).scrollTop() > 400) {
         $('#army-job').removeClass('welcome-hide');
-
     } else {
         $('#army-job').addClass('welcome-hide');
     }
@@ -45,6 +46,7 @@ $(window).scroll(function() {
         $('#programmer-job').addClass('welcome-hide');
     }
 });
+
 
 // Mobile Navigation
 $('.mobile-toggle').click(function() {

@@ -9,12 +9,14 @@
   <link href='http://fonts.googleapis.com/css?family=Montserrat|Cardo' rel='stylesheet' type='text/css'>
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <!--  Scripts-->
+  <link rel="stylesheet" href="css/freezeframe_styles.min.css">
+
+
 
 </head>
 <body>
 
-  <header class="main_h">
+  <header class="main_h grey lighten-5">
     <div class="row">
         <a class="logo" href="#">P/F</a>
         <div class="mobile-toggle">
@@ -58,7 +60,7 @@
           <img class="job-icon" src="college.png" alt="">
         </div>
         <div class="col s12 m9">
-          <h5>College taught me how to learn, and gave me a lifelong curiosity for the world around me.</h5>
+          <h5>College taught me how to learn, and gave me a lifelong curiosity towards the world around me.</h5>
         </div>
       </div>
 
@@ -76,27 +78,63 @@
           <img class="job-icon" src="programmer.png" alt="">
         </div>
         <div class="col s12 m9">
-          <h5>DBC, the second bootcamp in my life, taught me how to code but more importantly, gave me a passion for it.</h5>
+          <h5>DBC, the second bootcamp in my life, taught me how to code, but more importantly, gave me a passion for it.</h5>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="container">
-    <div class="section">
+  <div class="projects-section">
+    <div class="container">
+      <div class="section">
 
-      <div class="row">
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4 class="grey-text text-darken-3">Contact Us</h4>
-          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+        <div class="row">
+          <div class="col s12 center">
+            <h3><i class="mdi-content-send brown-text"></i></h3>
+            <h4 class="grey-text white-text">Projects</h4>
+          </div>
         </div>
-      </div>
+        <div class="row">
 
+          <div class="col s12 m6">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img id="bucketlistgif" class="activator freezeframe freezeframe-responsive" src="bucketlist.gif">
+              </div>
+              <div class="card-content center">
+                <span class="card-title activator grey-text text-darken-4">BucketList<i class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">BucketList<i class="material-icons right">close</i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img id="bucketlistgif2" class="activator freezeframe freezeframe-responsive" src="bucketlist.gif">
+              </div>
+              <div class="card-content center">
+                <span class="card-title activator grey-text text-darken-4">BucketList<i class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">BucketList<i class="material-icons right">close</i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
     </div>
   </div>
 
-  <footer class="page-footer teal">
+
+  <!-- <footer class="page-footer white">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
@@ -125,14 +163,14 @@
         </div>
       </div>
     </div>
-    <div class="footer-copyright">
-      <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-      </div>
-    </div>
-  </footer>
+  </footer> -->
+
+  <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/vendor/imagesloaded.pkgd.js"></script>
+  <script src="js/freezeframe.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+
   </body>
 </html>

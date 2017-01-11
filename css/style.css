@@ -36,7 +36,7 @@
 
  .sticky {
    background-color: rgba(255, 255, 255, 0.93);
-   opacity: 1;
+   opacity: 0.9;
    top: 0px;
    border-bottom: 1px solid gainsboro;
  }
@@ -325,7 +325,6 @@ h3.welcome-message{
 }
 
 img.job-icon{
-  width: 70px;
   display: block;
   margin: auto;
 }
@@ -334,4 +333,10 @@ div.job-row{
   transition: all 0.5s;
   margin-top: 40px;
   margin-bottom: 40px;
+}
+
+.projects-section{
+  background-color: #fb8c00;
+  margin-top: 3.5vh;
+  padding-bottom: 80vh;
 }
