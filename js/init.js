@@ -47,6 +47,12 @@ $(window).scroll(function() {
     }
 });
 
+$('.card').mouseover(function(){
+  $(this).addClass('hover-project');
+})
+$('.card').mouseout(function(){
+  $(this).removeClass('hover-project');
+})
 
 // Mobile Navigation
 $('.mobile-toggle').click(function() {
