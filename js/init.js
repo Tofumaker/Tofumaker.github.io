@@ -4,6 +4,11 @@
     $('.parallax').parallax();
     $('#bucketlistgif').freezeframe();
     $('#bucketlistgif2').freezeframe();
+    $(document).scroll(function(){
+      var topDist = $(document).scrollTop();
+      $('#bio-section').css('margin-top', topDist);
+    });
+
   }); // end of document ready
   // Sticky Header
 $(window).scroll(function() {
@@ -57,10 +62,10 @@ $(window).scroll(function() {
 
 $('.card').mouseover(function(){
   $(this).addClass('hover-project');
-})
+});
 $('.card').mouseout(function(){
   $(this).removeClass('hover-project');
-})
+});
 
 // Mobile Navigation
 $('.mobile-toggle').click(function() {
