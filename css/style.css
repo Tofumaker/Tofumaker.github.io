@@ -36,7 +36,7 @@
 
  .sticky {
    background-color: rgba(255, 255, 255, 0.93);
-   opacity: 0.9;
+   opacity: 1;
    top: 0px;
    border-bottom: 1px solid gainsboro;
  }
@@ -181,7 +181,6 @@
    color: #fff;
    padding-top: 110px;
    min-height: 100vh;
-
    letter-spacing: 2px;
    font-family: "Montserrat", sans-serif;
  }
@@ -337,7 +336,7 @@ div.job-row{
 
 #projects-section{
   background-color: #fb8c00;
-  margin-top: 3.5vh;
+  margin-top: 3.4vh;
   padding-bottom: 80vh;
 }
 
@@ -351,6 +350,14 @@ img.freezeframe {
 }
 
 .hover-project{
-  box-shadow: 10px 10px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.3);
   margin: 0.8rem 1.2rem 1.2rem 0.8rem;
 }
+
+/*.lock-section{
+  position: fixed;
+}
+
+.push-section-down{
+  margin-top: 3000vh;
+}*/
