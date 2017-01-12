@@ -8,13 +8,13 @@
   // Sticky Header
 $(window).scroll(function() {
 
-    if ($(window).scrollTop() > 100) {
+    if ($(window).scrollTop() > 50) {
         $('.main_h').addClass('sticky');
     } else {
         $('.main_h').removeClass('sticky');
     }
 
-    if ($(window).scrollTop() > 250) {
+    if ($(window).scrollTop() > 150) {
         $('.welcome-message').removeClass('welcome-hide');
         $('.hero').addClass('blur-image');
     } else {
@@ -44,6 +44,14 @@ $(window).scroll(function() {
         $('#programmer-job').removeClass('welcome-hide');
     } else {
         $('#programmer-job').addClass('welcome-hide');
+    }
+
+    if ($(window).scrollTop() >700) {
+      $('#bio-section').addClass('lock-section');
+      $('#projects-section').addClass('push-section-down');
+    } else{
+      $('#bio-section').removeClass('lock-section');
+      $('#projects-section').removeClass('push-section-down');
     }
 });
 
