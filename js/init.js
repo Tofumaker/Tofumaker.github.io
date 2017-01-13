@@ -4,13 +4,14 @@
     $('.parallax').parallax();
     $('#bucketlistgif').freezeframe();
     $('#bucketlistgif2').freezeframe();
-    $(document).scroll(function(){
-      var topDist = $(document).scrollTop();
-      $('#bio-section').css('margin-top', topDist);
-    });
+    // $(document).scroll(function(){
+    //   var topDist = $(document).scrollTop();
+    //   $('.push-section-down').css('margin-top', -topDist);
+    // });
 
   }); // end of document ready
   // Sticky Header
+
 $(window).scroll(function() {
 
     if ($(window).scrollTop() > 50) {
@@ -45,17 +46,20 @@ $(window).scroll(function() {
         $('#marketer-job').addClass('welcome-hide');
     }
 
-    if ($(window).scrollTop() > 680) {
+    if ($(window).scrollTop() > 650) {
         $('#programmer-job').removeClass('welcome-hide');
     } else {
         $('#programmer-job').addClass('welcome-hide');
     }
 
-    if ($(window).scrollTop() >700) {
-      $('#bio-section').addClass('lock-section');
+    var navheight = $('.main_h').height();
+    if ($(window).scrollTop() >= $('#bio-section').offset().top-navheight-40) {
+      var navheight = $('.main_h').height();
+      $('.biography').addClass('lock-section');
+      $('.biography').css('top', navheight)
       $('#projects-section').addClass('push-section-down');
     } else{
-      $('#bio-section').removeClass('lock-section');
+      $('.biography').removeClass('lock-section');
       $('#projects-section').removeClass('push-section-down');
     }
 });
@@ -86,7 +90,7 @@ $('.main_h li a').click(function() {
 // navigation scroll lijepo radi materem
 $('nav a').click(function(event) {
     var id = $(this).attr("href");
-    var offset = 40;
+    var offset = 80;
     var target = $(id).offset().top - offset;
     $('html, body').animate({
         scrollTop: target
