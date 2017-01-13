@@ -313,7 +313,6 @@ footer.page-footer {
 /*custom stuff*/
 h3.welcome-message{
   transition: all 0.5s;
-  z-index: -1000;
 }
 
 .welcome-hide{
@@ -331,17 +330,21 @@ div.job-row{
   transition: all 0.5s;
   margin-top: 40px;
   margin-bottom: 40px;
-  z-index: -1000;
 }
 
 #projects-section{
   background-color: #fb8c00;
-  z-index: 1000;
-  opacity: 1;
+  z-index: -500;
 }
 
 #bio-section{
   z-index: -1000;
+}
+
+#links-section {
+  margin-top: -3.3vh;
+  background-color: green;
+  /*z-index: 1000;*/
 }
 
 img.freezeframe {
@@ -358,8 +361,7 @@ img.freezeframe {
   margin: 0.8rem 1.2rem 1.2rem 0.8rem;
 }
 
-.lock-section{
-  top: 0px;
+.lock-bio{
   left: 10vw;
   right: 10vw;
   margin: 0;
@@ -369,6 +371,40 @@ img.freezeframe {
   z-index: -1000;
 }
 
-/**{
+.lock-projects{
+  left: 10vw;
+  right: 10vw;
+  margin: 0;
+  max-width: 80vw;
+  min-height: 100vh;
+  position: fixed;
+  overflow: hidden;
+  margin-bottom: -10vh;
+}
+
+.lock-links{
+  left: 10vw;
+  right: 10vw;
+  margin: 0;
+  max-width: 80vw;
+  min-height: 100vh;
+  position: fixed;
+  overflow: hidden;
+  /*margin-bottom: -10vh;*/
+  z-index: 0;
+}
+
+.proyectos{
+  z-index: inherit;
+}
+
+#links-section{
+  position: relative;
+}
+
+
+
+
+/** {
   border: 1px solid red;
 }*/
