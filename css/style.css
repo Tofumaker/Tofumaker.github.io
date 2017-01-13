@@ -8,14 +8,12 @@
 
  .main_h {
    position: fixed;
-   top: 0px;
    max-height: 60px;
    z-index: 999;
    width: 100%;
    overflow: hidden;
    -webkit-transition: all 0.3s;
    transition: all 0.4s;
-   opacity: 0;
    top: -100px;
    padding-bottom: 6px;
    font-family: "Montserrat", sans-serif;
@@ -315,6 +313,7 @@ footer.page-footer {
 /*custom stuff*/
 h3.welcome-message{
   transition: all 0.5s;
+  z-index: -1000;
 }
 
 .welcome-hide{
@@ -332,12 +331,17 @@ div.job-row{
   transition: all 0.5s;
   margin-top: 40px;
   margin-bottom: 40px;
+  z-index: -1000;
 }
 
 #projects-section{
   background-color: #fb8c00;
-  margin-top: 3.4vh;
-  padding-bottom: 80vh;
+  z-index: 1000;
+  opacity: 1;
+}
+
+#bio-section{
+  z-index: -1000;
 }
 
 img.freezeframe {
@@ -350,14 +354,21 @@ img.freezeframe {
 }
 
 .hover-project{
-  box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.25);
   margin: 0.8rem 1.2rem 1.2rem 0.8rem;
 }
 
-/*.lock-section{
+.lock-section{
+  top: 0px;
+  left: 10vw;
+  right: 10vw;
+  margin: 0;
+  max-width: 80vw;
   position: fixed;
+  overflow: hidden;
+  z-index: -1000;
 }
 
-.push-section-down{
-  margin-top: 3000vh;
+/**{
+  border: 1px solid red;
 }*/
