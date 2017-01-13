@@ -142,7 +142,7 @@
  body {
    color: #8f8f8f;
    background: white;
-   font-family: "Cardo", serif;
+   font-family: "Anaheim", sans-serif;
    font-weight: 300;
    -webkit-font-smoothing: antialiased;
  }
@@ -368,7 +368,7 @@ img.freezeframe {
   max-width: 80vw;
   position: fixed;
   overflow: hidden;
-  z-index: -1000;
+  z-index: -1;
 }
 
 .lock-projects{
@@ -389,9 +389,9 @@ img.freezeframe {
   max-width: 80vw;
   min-height: 100vh;
   position: fixed;
-  overflow: hidden;
+  /*overflow: hidden;*/
   /*margin-bottom: -10vh;*/
-  z-index: 0;
+  /*z-index: 0;*/
 }
 
 .proyectos{
@@ -400,6 +400,7 @@ img.freezeframe {
 
 #links-section{
   position: relative;
+  border: 1px solid green;
 }
 
 

@@ -68,7 +68,7 @@ $(window).scroll(function() {
       $('.proyectos').removeClass('lock-projects');
     }
 
-    if ($(window).scrollTop() >= $('#links-section').offset().top-navheight-25) {
+    if ($(window).scrollTop() >= $('#links-section').offset().top-navheight) {
       $('.contacts-section').addClass('lock-projects');
       $('.contacts-section').css('top', navheight);
     } else {
