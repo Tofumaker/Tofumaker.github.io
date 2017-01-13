@@ -6,7 +6,7 @@
     $('#bucketlistgif2').freezeframe();
     // $(document).scroll(function(){
     //   var topDist = $(document).scrollTop();
-    //   $('.push-section-down').css('margin-top', -topDist);
+    //   $('.biography').css('margin-top', (topDist/10));
     // });
 
   }); // end of document ready
@@ -53,14 +53,26 @@ $(window).scroll(function() {
     }
 
     var navheight = $('.main_h').height();
-    if ($(window).scrollTop() >= $('#bio-section').offset().top-navheight-40) {
+    if ($(window).scrollTop() >= $('#bio-section').offset().top-navheight-25) {
       var navheight = $('.main_h').height();
-      $('.biography').addClass('lock-section');
+      $('.biography').addClass('lock-bio');
       $('.biography').css('top', navheight)
-      $('#projects-section').addClass('push-section-down');
     } else{
-      $('.biography').removeClass('lock-section');
-      $('#projects-section').removeClass('push-section-down');
+      $('.biography').removeClass('lock-bio');
+    }
+    if ($(window).scrollTop() >= $('#projects-section').offset().top-navheight) {
+      var navheight = $('.main_h').height();
+      $('.proyectos').addClass('lock-projects');
+      $('.proyectos').css('top', navheight);
+    } else{
+      $('.proyectos').removeClass('lock-projects');
+    }
+
+    if ($(window).scrollTop() >= $('#links-section').offset().top-navheight-25) {
+      $('.contacts-section').addClass('lock-projects');
+      $('.contacts-section').css('top', navheight);
+    } else {
+      $('.contacts-section').removeClass('lock-projects');
     }
 });
 
