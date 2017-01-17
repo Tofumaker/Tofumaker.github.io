@@ -52,6 +52,12 @@ $(window).scroll(function() {
         $('#programmer-job').addClass('welcome-hide');
     }
 
+    if ($(window).scrollTop() > 900) {
+        $('.projects-welcome-section').removeClass('welcome-hide');
+    } else {
+        $('.projects-welcome-section').addClass('welcome-hide');
+    }
+
     var navheight = $('.main_h').height();
     if ($(window).scrollTop() >= $('#bio-section').offset().top-navheight-25) {
       var navheight = $('.main_h').height();
@@ -69,10 +75,10 @@ $(window).scroll(function() {
     }
 
     if ($(window).scrollTop() >= $('#links-section').offset().top-navheight) {
-      $('.contacts-section').addClass('lock-projects');
+      $('.contacts-section').addClass('lock-links');
       $('.contacts-section').css('top', navheight);
     } else {
-      $('.contacts-section').removeClass('lock-projects');
+      $('.contacts-section').removeClass('lock-links');
     }
 });
 
@@ -102,7 +108,7 @@ $('.main_h li a').click(function() {
 // navigation scroll lijepo radi materem
 $('nav a').click(function(event) {
     var id = $(this).attr("href");
-    var offset = 80;
+    var offset = 40;
     var target = $(id).offset().top - offset;
     $('html, body').animate({
         scrollTop: target

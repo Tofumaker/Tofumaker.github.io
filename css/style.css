@@ -37,6 +37,7 @@
    opacity: 1;
    top: 0px;
    border-bottom: 1px solid gainsboro;
+   z-index: 2000;
  }
 
  .logo {
@@ -337,14 +338,12 @@ div.job-row{
   z-index: -500;
 }
 
-#bio-section{
-  z-index: -1000;
-}
-
 #links-section {
   margin-top: -3.3vh;
   background-color: green;
-  /*z-index: 1000;*/
+  z-index: 1000;
+  position: relative;
+  border: 1px solid green;
 }
 
 img.freezeframe {
@@ -389,24 +388,27 @@ img.freezeframe {
   max-width: 80vw;
   min-height: 100vh;
   position: fixed;
-  /*overflow: hidden;*/
-  /*margin-bottom: -10vh;*/
-  /*z-index: 0;*/
+  overflow: hidden;
+  margin-bottom: -10vh;
 }
 
 .proyectos{
   z-index: inherit;
+  overflow: hidden;
 }
 
-#links-section{
-  position: relative;
-  border: 1px solid green;
-}
-
-.site-footer{
+#site-footer{
   background-color: blue;
-  min-height: 25vh;
+  min-height: 20vh;
+  overflow: hidden;
+  position: relative;
 }
+
+.projects-welcome-section{
+  transition: all 0.5s;
+}
+
+
 
 
 /** {
