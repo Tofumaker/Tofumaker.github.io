@@ -403,7 +403,10 @@ img.freezeframe {
   border: 1px solid green;
 }
 
-
+.site-footer{
+  background-color: blue;
+  min-height: 25vh;
+}
 
 
 /** {
