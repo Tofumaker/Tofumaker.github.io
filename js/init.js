@@ -3,7 +3,7 @@
     $('.button-collapse').sideNav();
     $('.parallax').parallax();
     $('#bucketlistgif').freezeframe();
-    $('#bucketlistgif2').freezeframe();
+    $('#ticortoegif').freezeframe();
     // $(document).scroll(function(){
     //   var topDist = $(document).scrollTop();
     //   $('.biography').css('margin-top', (topDist/10));
