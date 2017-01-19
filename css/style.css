@@ -408,7 +408,9 @@ img.freezeframe {
   transition: all 0.5s;
 }
 
-
+#ticortoegif{
+  height: 308px;
+}
 
 
 /** {
