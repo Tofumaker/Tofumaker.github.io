@@ -2,8 +2,8 @@
   $(function(){
     $('.button-collapse').sideNav();
     $('.parallax').parallax();
-    $('#bucketlistgif').freezeframe();
-    $('#ticortoegif').freezeframe();
+    $('.animatedgif').freezeframe();
+    $('.carousel').carousel();
     // $(document).scroll(function(){
     //   var topDist = $(document).scrollTop();
     //   $('.biography').css('margin-top', (topDist/10));
