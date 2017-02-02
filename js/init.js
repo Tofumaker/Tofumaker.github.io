@@ -4,11 +4,8 @@
     $('.parallax').parallax();
     $('.animatedgif').freezeframe();
     $('.carousel').carousel();
-    // $(document).scroll(function(){
-    //   var topDist = $(document).scrollTop();
-    //   $('.biography').css('margin-top', (topDist/10));
-    // });
-
+    $('.carousel.carousel-slider').carousel({fullWidth: true});
+    $(function(){ $('.carousel.carousel-slider').carousel({full_width: true}); });
   }); // end of document ready
   // Sticky Header
 
@@ -82,12 +79,12 @@ $(window).scroll(function() {
     }
 });
 
-$('.card').mouseover(function(){
-  $(this).addClass('hover-project');
-});
-$('.card').mouseout(function(){
-  $(this).removeClass('hover-project');
-});
+// $('.card').mouseover(function(){
+//   $(this).addClass('hover-project');
+// });
+// $('.card').mouseout(function(){
+//   $(this).removeClass('hover-project');
+// });
 
 // Mobile Navigation
 $('.mobile-toggle').click(function() {

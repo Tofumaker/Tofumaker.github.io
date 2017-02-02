@@ -408,12 +408,10 @@ img.freezeframe {
   transition: all 0.5s;
 }
 
-
-/*.animatedgif{
-  height: 13vw;
-}*/
-
-
-/** {
+.container{
   border: 1px solid red;
-}*/
+}
+
+.carousel-slider{
+  height: 500px;
+}
