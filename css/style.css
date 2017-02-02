@@ -25,7 +25,7 @@
  }
 
  .open-nav {
-   max-height: 400px !important;
+   max-height: 800px !important;
  }
  .open-nav .mobile-toggle {
    transform: rotate(-90deg);
@@ -408,10 +408,31 @@ img.freezeframe {
   transition: all 0.5s;
 }
 
-.container{
-  border: 1px solid red;
+.carousel{
+  margin-top: 10vh;
+  height: 70vh;
 }
 
-.carousel-slider{
-  height: 500px;
+.project-bucketlist{
+  background-image: url("../bucketlist.gif");
+  background-size: 100%;
+}
+
+.project-tic-or-toe{
+  background-image: url("../tic-or-toe.gif");
+  background-size: 100%;
+}
+
+.project-side-projects{
+  background-image: url("../bubblesort.gif");
+  background-size: 100%;
+}
+
+.project-description{
+  padding: 0vw 5vw;
+  display: inline-block;
+  height: inherit;
+  width: inherit;
+  background-color: rgba(0,0,0,0.9);
+  position: relative;
 }
