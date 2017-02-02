@@ -1,17 +1,19 @@
+$(function(){
+  $('.carousel.carousel-slider').carousel({full_width: true});
+});
+
 (function($){
   $(function(){
     $('.button-collapse').sideNav();
     $('.parallax').parallax();
     $('.animatedgif').freezeframe();
     $('.carousel').carousel();
-    $('.carousel.carousel-slider').carousel({fullWidth: true});
-    $(function(){ $('.carousel.carousel-slider').carousel({full_width: true}); });
   }); // end of document ready
   // Sticky Header
 
 $(window).scroll(function() {
 
-    if ($(window).scrollTop() > 50) {
+    if ($(window).scrollTop() > 150) {
         $('.main_h').addClass('sticky');
     } else {
         $('.main_h').removeClass('sticky');
