@@ -10,7 +10,6 @@
   <link href="https://fonts.googleapis.com/css?family=Anaheim" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link rel="stylesheet" href="css/freezeframe_styles.min.css">
 </head>
 
 <body>
@@ -27,8 +26,8 @@
             <ul>
                 <li><a href="#bio-section">About</a></li>
                 <li><a href="#projects-section">Projects</a></li>
-                <li><a href="#links-section">Links</a></li>
-                <li><a href="#site-footer">Contacts</a></li>
+                <li><a href="#links-section">Contact</a></li>
+                <li><a href="#site-footer">Credits</a></li>
             </ul>
         </nav>
     </div>
@@ -42,134 +41,100 @@
   </div>
 
   <div id="bio-section" class="section">
-    <div class="container biography">
-      <h3 class="welcome-message grey-text text-darken-3">Hi, welcome to my site! Here's a bit about me...</h3>
-      <!--   Icon Section   -->
-      <br>
-      <div id="army-job" class="row job-row">
-        <div class="icon-block col s12 m3">
-          <img class="job-icon" src="army.png" alt="">
-        </div>
-        <div class="col s12 m9">
-          <h5>The army taught me how to solve problems on the move, as part of a team.</h5>
-        </div>
-      </div>
+    <div class="biography">
+      <div class="bio-tint">
+        <div class="container">
+            <h3 class="welcome-message grey-text text-darken-3">Hi, welcome to my site! Here's a bit about me...</h3>
+            <!--   Icon Section   -->
+            <br>
+            <br>
+            <br>
+            <div id="army-job" class="row job-row">
+              <div class="icon-block col s12 m3">
+                <img class="job-icon" src="army.png" alt="">
+              </div>
+              <div class="col s12 m9">
+                <h5>The army taught me how to solve problems on the move, as part of a team.</h5>
+              </div>
+            </div>
 
-      <div id="college-job" class="row job-row">
-        <div class="icon-block col s12 m3">
-          <img class="job-icon" src="college.png" alt="">
-        </div>
-        <div class="col s12 m9">
-          <h5>College taught me how to learn, and gave me a lifelong curiosity towards the world around me.</h5>
-        </div>
-      </div>
+            <div id="college-job" class="row job-row">
+              <div class="icon-block col s12 m3">
+                <img class="job-icon" src="college.png" alt="">
+              </div>
+              <div class="col s12 m9">
+                <h5>College taught me how to learn, and gave me a lifelong curiosity towards the world around me.</h5>
+              </div>
+            </div>
 
-      <div id="marketer-job" class="row job-row">
-        <div class="icon-block col s12 m3">
-          <img class="job-icon" src="marketer.png" alt="">
-        </div>
-        <div class="col s12 m9">
-          <h5>A career in marketing taught me how to anticipate clients' needs.</h5>
-        </div>
-      </div>
+            <div id="marketer-job" class="row job-row">
+              <div class="icon-block col s12 m3">
+                <img class="job-icon" src="marketer.png" alt="">
+              </div>
+              <div class="col s12 m9">
+                <h5>A career in marketing taught me how to anticipate clients' needs.</h5>
+              </div>
+            </div>
 
-      <div id="programmer-job" class="row job-row">
-        <div class="icon-block col s12 m3">
-          <img class="job-icon" src="programmer.png" alt="">
-        </div>
-        <div class="col s12 m9">
-          <h5>DBC, the second bootcamp in my life, taught me how to code, but more importantly, gave me a passion for it.</h5>
+            <div id="programmer-job" class="row job-row">
+              <div class="icon-block col s12 m3">
+                <img class="job-icon" src="programmer.png" alt="">
+              </div>
+              <div class="col s12 m9">
+                <h5>DBC, the second bootcamp in my life, taught me how to code, but more importantly, gave me a passion for it.</h5>
+              </div>
+            </div>
         </div>
       </div>
     </div>
+
   </div>
 
   <div id="projects-section" class="section">
+    <div class="proyectos">
+      <div class="proyectos-tint">
+        <div class="container">
 
-    <div class="container proyectos">
-        <h3 class="projects-welcome-section grey-text white-text">Here are some projects I've worked on...</h3>
+            <h3 class="projects-welcome-section welcome-message white-text">Here are some projects I've worked on...</h3>
+            <br><br><br>
+            <div class="carousel carousel-slider center" data-indicators="true">
 
-        <!-- <div class="carousel center">
+              <div class="project-bucketlist carousel-item white-text" href="#one!">
+                <div class="project-description">
+                  <h2>BucketList</h2>
+                  <p class="white-text">Bucketlist utlizes the IBM Watson API to analyze a piece of your own writing, or twitter, and suggests activities based on your personality and comfort level. The app learns more about an activity based on users' votes and makes smarter suggestions over time.</p>
+                  <a href="http://dbcbucketlist.herokuapp.com">Go to app.</a>
+                </div>
+              </div>
 
-          <div class="carousel-item center">
-            <div class="card">
-              <div class="card-image waves-effect waves-block waves-light">
+              <div class="project-tic-or-toe carousel-item white-text" href="#two!">
+                <div class="project-description">
+                  <h2>Tic or Toe</h2>
+                  <p class="white-text">Tic or Toe is a 5x5 tic tac toe game with various difficulty settings. The entire project was developed from over a 3-day period. I was primarily responsible for the computer player's strategy algorithm. It should be impossible to beat on the most difficult setting... well at least no one has beaten it yet!</p>
+                  <a href="http://tic-or-toe.herokuapp.com">Go to app.</a>
+                </div>
+              </div>
 
+              <div class="project-side-projects carousel-item green white-text" href="#three!">
+                <div class="project-description">
+                  <h2>Side Projects</h2>
+                  <p class="white-text">This is a collection of random side projects I'm working on. So far, it contains a visual representation of bubble sort on a randomly generated array.</p>
+                  <a href="http://derek-side-projects.herokuapp.com">Go to app.</a>
+                </div>
               </div>
-              <div class="card-content center">
-                <span class="card-title activator grey-text text-darken-4">BucketList<i class="material-icons right">more_vert</i></span>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">BucketList<i class="material-icons right">close</i></span>
-                <p></p>
-                <a href="dbcbucketlist.herokuapp.com">Go to app.</a>
-              </div>
-            </div>
-          </div>
 
-          <div class="carousel-item center">
-            <div class="card">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="animatedgif activator freezeframe freezeframe-responsive" src="tic-or-toe.gif">
-              </div>
-              <div class="card-content center">
-                <span class="card-title activator grey-text text-darken-4">Tic or Toe<i class="material-icons right">more_vert</i></span>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Tic or Toe<i class="material-icons right">close</i></span>
-                <p>Here is some more information about this product that is only revealed once clicked on.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item center">
-            <div class="card">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="animatedgif activator freezeframe freezeframe-responsive" src="bubblesort.gif">
-              </div>
-              <div class="card-content center">
-                <span class="card-title activator grey-text text-darken-4">Bubble Sort<i class="material-icons right">more_vert</i></span>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">BucketList<i class="material-icons right">close</i></span>
-                <p>Here is some more information about this product that is only revealed once clicked on.</p>
-              </div>
-            </div>
-          </div>
-
-        </div> -->
-
-        <div class="carousel carousel-slider center" data-indicators="true">
-          <div class="project-bucketlist carousel-item white-text" href="#one!">
-            <div class="project-description">
-              <h2>BucketList</h2>
-              <p class="white-text">Bucketlist utlizes the IBM Watson API to analyze a piece of your own writing, or twitter, and suggests activities based on your personality and comfort level. The app learns more about an activity based on users' votes and makes smarter suggestions over time.</p>
-              <a href="http://dbcbucketlist.herokuapp.com">Go to app.</a>
-            </div>
-          </div>
-          <div class="project-tic-or-toe carousel-item white-text" href="#two!">
-            <div class="project-description">
-              <h2>Tic or Toe</h2>
-              <p class="white-text">Tic or Toe is a 5x5 tic tac toe game with various difficulty settings. The entire project was developed from over a 3-day period. I was primarily responsible for the computer player's strategy algorithm. It should be impossible to beat on the most difficult setting... well at least no one has beaten it yet!</p>
-              <a href="http://tic-or-toe.herokuapp.com">Go to app.</a>
-            </div>
-          </div>
-          <div class="project-side-projects carousel-item green white-text" href="#three!">
-            <div class="project-description">
-              <h2>Side Projects</h2>
-              <p class="white-text">This is a collection of random side projects I'm working on. So far, it contains a visual representation of bubble sort on a randomly generated array.</p>
-              <a href="http://derek-side-projects.herokuapp.com">Go to app.</a>
             </div>
 
-          </div>
         </div>
 
+      </div>
     </div>
+
   </div>
 
   <div id="links-section" class=" section">
     <div class="container contacts-section">
-      <h3 class="links-welcome-message grey-text">Here are some links to stuff I enjoy...</h3>
+      <h3 class="welcome-message grey-text">Here are some links to stuff I enjoy...</h3>
     </div>
   </div>
 

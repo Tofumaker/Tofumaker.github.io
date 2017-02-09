@@ -58,7 +58,7 @@ $(window).scroll(function() {
     }
 
     var navheight = $('.main_h').height();
-    if ($(window).scrollTop() >= $('#bio-section').offset().top-navheight-25) {
+    if ($(window).scrollTop() >= $('#bio-section').offset().top-navheight) {
       var navheight = $('.main_h').height();
       $('.biography').addClass('lock-bio');
       $('.biography').css('top', navheight)

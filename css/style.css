@@ -196,7 +196,7 @@
  }
 
  .blur-image {
-   filter: blur(2px);
+   /*filter: blur(2px);*/
  }
 
  .mouse {
@@ -274,6 +274,7 @@ p {
 }
 
 .parallax-container {
+  border: 1px solid red;
   min-height: 380px;
   line-height: 0;
   height: auto;
@@ -329,56 +330,36 @@ img.job-icon{
 
 div.job-row{
   transition: all 0.5s;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin: 5vh auto;
+}
+
+#bio-section{
+  margin-top: -25px;
+  position: relative;
 }
 
 #projects-section{
-  background-color: #fb8c00;
-  z-index: -500;
+  position: relative;
 }
 
 #links-section {
-  margin-top: -3.3vh;
+  margin-top: -25px;
   background-color: green;
-  z-index: 1000;
   position: relative;
-  border: 1px solid green;
-}
-
-img.freezeframe {
-  border: 1px solid grey;
-}
-
-.card{
-  transition: all 0.5s;
-  border: 1px solid grey;
-}
-
-.hover-project{
-  box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.25);
-  margin: 0.8rem 1.2rem 1.2rem 0.8rem;
 }
 
 .lock-bio{
-  left: 10vw;
-  right: 10vw;
-  margin: 0;
-  max-width: 80vw;
-  position: fixed;
-  overflow: hidden;
-  z-index: -1;
-}
-
-.lock-projects{
-  left: 10vw;
-  right: 10vw;
-  margin: 0;
-  max-width: 80vw;
+  min-width: 100vw;
   min-height: 100vh;
   position: fixed;
   overflow: hidden;
-  margin-bottom: -10vh;
+}
+
+.lock-projects{
+  min-width: 100vw;
+  min-height: 100vh;
+  position: fixed;
+  overflow: hidden;
 }
 
 .lock-links{
@@ -392,9 +373,32 @@ img.freezeframe {
   margin-bottom: -10vh;
 }
 
+.biography{
+  min-width: 100vw;
+  min-height: 100vh;
+  background-image: url("../road-background.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.bio-tint{
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
 .proyectos{
-  z-index: inherit;
-  overflow: hidden;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-image: url("../workshop.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.proyectos-tint{
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 #site-footer{
@@ -415,17 +419,17 @@ img.freezeframe {
 
 .project-bucketlist{
   background-image: url("../bucketlist.gif");
-  background-size: 100%;
+  background-size: cover;;
 }
 
 .project-tic-or-toe{
   background-image: url("../tic-or-toe.gif");
-  background-size: 100%;
+  background-size: cover;
 }
 
 .project-side-projects{
   background-image: url("../bubblesort.gif");
-  background-size: 100%;
+  background-size: cover;
 }
 
 .project-description{
@@ -433,6 +437,10 @@ img.freezeframe {
   display: inline-block;
   height: inherit;
   width: inherit;
-  background-color: rgba(0,0,0,0.9);
+  background-color: rgba(0,0,0,0.85);
   position: relative;
+}
+
+.welcome-message{
+  position:absolute;
 }
