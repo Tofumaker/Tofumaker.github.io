@@ -343,8 +343,6 @@ div.job-row{
 }
 
 #links-section {
-  margin-top: -25px;
-  background-color: green;
   position: relative;
 }
 
@@ -363,14 +361,10 @@ div.job-row{
 }
 
 .lock-links{
-  left: 10vw;
-  right: 10vw;
-  margin: 0;
-  max-width: 80vw;
+  min-width: 100vw;
   min-height: 100vh;
   position: fixed;
   overflow: hidden;
-  margin-bottom: -10vh;
 }
 
 .biography{
@@ -399,6 +393,20 @@ div.job-row{
   min-width: 100vw;
   min-height: 100vh;
   background-color: rgba(0, 0, 0, 0.7);
+}
+
+.contacts-section{
+  min-width: 100vw;
+  min-height: 100vh;
+  background-image: url("../contact.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.contacts-tint{
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 #site-footer{
