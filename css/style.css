@@ -310,6 +310,7 @@ footer.page-footer {
 /*custom stuff*/
 h3.welcome-message{
   transition: all 0.5s;
+
 }
 
 .welcome-hide{
@@ -430,7 +431,6 @@ div.job-row{
   padding-top: 25px;
 }
 
-/*.welcome-message{
-  margin-top: 25px;
-  position:relative;
-}*/
+.lock-bio{
+  /*max-height: 100vh;*/
+}
