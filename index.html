@@ -16,7 +16,7 @@
 
   <header class="main_h grey lighten-5">
     <div class="row">
-        <a class="logo" href="#">P/F</a>
+        <a class="logo" href="#">DYY</a>
         <div class="mobile-toggle">
             <span></span>
             <span></span>
@@ -26,7 +26,7 @@
             <ul>
                 <li><a href="#bio-section">About</a></li>
                 <li><a href="#projects-section">Projects</a></li>
-                <li><a href="#links-section">Contact</a></li>
+                <li><a href="#contacts-section">Contact</a></li>
                 <li><a href="#site-footer">Credits</a></li>
             </ul>
         </nav>
@@ -44,11 +44,9 @@
     <div class="biography">
       <div class="bio-tint">
         <div class="container">
-            <h3 class="welcome-message grey-text text-darken-3">Hi, welcome to my site! Here's a bit about me...</h3>
+              <h3 class="welcome-message grey-text text-darken-3">Hi, welcome to my site! Here's a bit about me...</h3>
+
             <!--   Icon Section   -->
-            <br>
-            <br>
-            <br>
             <div id="army-job" class="row job-row">
               <div class="icon-block col s12 m3">
                 <img class="job-icon" src="army.png" alt="">
@@ -96,7 +94,6 @@
         <div class="container">
 
             <h3 class="projects-welcome-section welcome-message white-text">Here are some projects I've worked on...</h3>
-            <br><br><br>
             <div class="carousel carousel-slider center" data-indicators="true">
 
               <div class="project-bucketlist carousel-item white-text" href="#one!">
@@ -132,11 +129,41 @@
 
   </div>
 
-  <div id="links-section" class=" section">
+  <div id="contacts-section" class=" section">
     <div class="contacts-section">
       <div class="contacts-tint">
         <div class="container">
           <h3 class="welcome-message grey-text text-darken-3">Thanks for reading! Interested in my work? Here's my contact info.</h3>
+
+           <form class="col s12">
+             <div class="row">
+               <div class="input-field col s12 m4 offset-m4">
+                 <i class="material-icons prefix">account_circle</i>
+                 <input id="icon_prefix" type="text" class="validate black-text">
+                 <label for="icon_prefix" class="grey-text text-darken-3">Name</label>
+               </div>
+               <div class="input-field col s12 m4">
+                 <i class="material-icons prefix">phone</i>
+                 <input id="icon_telephone" type="tel" class="black-text">
+                 <label for="icon_telephone" class="grey-text text-darken-3">Telephone/Email</label>
+               </div>
+             </div>
+             <div class="row">
+               <div class="input-field col s12 m8 offset-m4">
+                 <i class="material-icons prefix">comment</i>
+                 <textarea id="textarea1" class="materialize-textarea black-text"></textarea>
+                 <label for="textarea1" class="grey-text text-darken-3">Message</label>
+               </div>
+             </div>
+             <div class="row">
+               <div class="col m4 offset-m8">
+                 <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                   <i class="material-icons right">send</i>
+                 </button>
+               </div>
+
+             </div>
+           </form>
         </div>
       </div>
     </div>
@@ -151,7 +178,6 @@
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/vendor/imagesloaded.pkgd.js"></script>
-  <script src="js/freezeframe.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
 
