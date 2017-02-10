@@ -6,8 +6,8 @@ $(function(){
   $(function(){
     $('.button-collapse').sideNav();
     $('.parallax').parallax();
-    $('.animatedgif').freezeframe();
     $('.carousel').carousel();
+    $('#textarea1').trigger('autoresize');
   }); // end of document ready
   // Sticky Header
 
@@ -58,26 +58,25 @@ $(window).scroll(function() {
     }
 
     var navheight = $('.main_h').height();
+
     if ($(window).scrollTop() >= $('#bio-section').offset().top-navheight) {
-      var navheight = $('.main_h').height();
-      $('.biography').addClass('lock-bio');
-      $('.biography').css('top', navheight)
+      $('.biography').addClass('lock-section');
+      $('.biography').css('top', navheight);
     } else{
-      $('.biography').removeClass('lock-bio');
+      $('.biography').removeClass('lock-section');
     }
     if ($(window).scrollTop() >= $('#projects-section').offset().top-navheight) {
-      var navheight = $('.main_h').height();
-      $('.proyectos').addClass('lock-projects');
+      $('.proyectos').addClass('lock-section');
       $('.proyectos').css('top', navheight);
     } else{
-      $('.proyectos').removeClass('lock-projects');
+      $('.proyectos').removeClass('lock-section');
     }
 
-    if ($(window).scrollTop() >= $('#links-section').offset().top-navheight) {
-      $('.contacts-section').addClass('lock-links');
+    if ($(window).scrollTop() >= $('#contacts-section').offset().top-navheight) {
+      $('.contacts-section').addClass('lock-section');
       $('.contacts-section').css('top', navheight);
     } else {
-      $('.contacts-section').removeClass('lock-links');
+      $('.contacts-section').removeClass('lock-section');
     }
 });
 
@@ -107,8 +106,8 @@ $('.main_h li a').click(function() {
 // navigation scroll lijepo radi materem
 $('nav a').click(function(event) {
     var id = $(this).attr("href");
-    var offset = 40;
-    var target = $(id).offset().top - offset;
+    var navheight = $('.main_h').height();
+    var target = $(id).offset().top - navheight;
     $('html, body').animate({
         scrollTop: target
     }, 400);

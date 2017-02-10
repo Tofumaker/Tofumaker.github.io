@@ -37,7 +37,6 @@
    opacity: 1;
    top: 0px;
    border-bottom: 1px solid gainsboro;
-   z-index: 2000;
  }
 
  .logo {
@@ -134,10 +133,6 @@
    margin: 0 auto;
    position: relative;
    padding: 0 2%;
- }
-
- * {
-   box-sizing: border-box;
  }
 
  body {
@@ -342,27 +337,11 @@ div.job-row{
   position: relative;
 }
 
-#links-section {
+#contacts-section {
   position: relative;
 }
 
-.lock-bio{
-  min-width: 100vw;
-  min-height: 100vh;
-  position: fixed;
-  overflow: hidden;
-}
-
-.lock-projects{
-  min-width: 100vw;
-  min-height: 100vh;
-  position: fixed;
-  overflow: hidden;
-}
-
-.lock-links{
-  min-width: 100vw;
-  min-height: 100vh;
+.lock-section{
   position: fixed;
   overflow: hidden;
 }
@@ -412,7 +391,6 @@ div.job-row{
 #site-footer{
   background-color: blue;
   min-height: 20vh;
-  overflow: hidden;
   position: relative;
 }
 
@@ -422,7 +400,6 @@ div.job-row{
 
 .carousel{
   margin-top: 10vh;
-  height: 70vh;
 }
 
 .project-bucketlist{
@@ -445,10 +422,15 @@ div.job-row{
   display: inline-block;
   height: inherit;
   width: inherit;
-  background-color: rgba(0,0,0,0.85);
+  background-color: rgba(0,0,0,0.8);
   position: relative;
 }
 
-.welcome-message{
-  position:absolute;
+.container{
+  padding-top: 25px;
 }
+
+/*.welcome-message{
+  margin-top: 25px;
+  position:relative;
+}*/
