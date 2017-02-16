@@ -18,44 +18,44 @@ $(window).scroll(function() {
     } else {
         $('.main_h').removeClass('sticky');
     }
-    //
-    // if ($(window).scrollTop() > 150) {
-    //     $('.welcome-message').removeClass('welcome-hide');
-    //     $('.hero').addClass('blur-image');
-    // } else {
-    //     $('.welcome-message').addClass('welcome-hide');
-    //     $('.hero').removeClass('blur-image');
-    // }
-    //
-    // if ($(window).scrollTop() > 400) {
-    //     $('#army-job').removeClass('welcome-hide');
-    // } else {
-    //     $('#army-job').addClass('welcome-hide');
-    // }
-    //
-    // if ($(window).scrollTop() > 480) {
-    //     $('#college-job').removeClass('welcome-hide');
-    // } else {
-    //     $('#college-job').addClass('welcome-hide');
-    // }
-    //
-    // if ($(window).scrollTop() > 590) {
-    //     $('#marketer-job').removeClass('welcome-hide');
-    // } else {
-    //     $('#marketer-job').addClass('welcome-hide');
-    // }
-    //
-    // if ($(window).scrollTop() > 650) {
-    //     $('#programmer-job').removeClass('welcome-hide');
-    // } else {
-    //     $('#programmer-job').addClass('welcome-hide');
-    // }
-    //
-    // if ($(window).scrollTop() > 900) {
-    //     $('.projects-welcome-section').removeClass('welcome-hide');
-    // } else {
-    //     $('.projects-welcome-section').addClass('welcome-hide');
-    // }
+
+    if ($(window).scrollTop() > 150) {
+        $('.welcome-message').removeClass('welcome-hide');
+        $('.hero').addClass('blur-image');
+    } else {
+        $('.welcome-message').addClass('welcome-hide');
+        $('.hero').removeClass('blur-image');
+    }
+
+    if ($(window).scrollTop() > 400) {
+        $('#army-job').removeClass('welcome-hide');
+    } else {
+        $('#army-job').addClass('welcome-hide');
+    }
+
+    if ($(window).scrollTop() > 480) {
+        $('#college-job').removeClass('welcome-hide');
+    } else {
+        $('#college-job').addClass('welcome-hide');
+    }
+
+    if ($(window).scrollTop() > 590) {
+        $('#marketer-job').removeClass('welcome-hide');
+    } else {
+        $('#marketer-job').addClass('welcome-hide');
+    }
+
+    if ($(window).scrollTop() > 650) {
+        $('#programmer-job').removeClass('welcome-hide');
+    } else {
+        $('#programmer-job').addClass('welcome-hide');
+    }
+    
+    if ($(window).scrollTop() > 900) {
+        $('.projects-welcome-section').removeClass('welcome-hide');
+    } else {
+        $('.projects-welcome-section').addClass('welcome-hide');
+    }
 
     var navheight = $('.main_h').height();
 
