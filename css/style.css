@@ -312,7 +312,6 @@ footer.page-footer {
   margin: 0;
 }
 
-
 /*custom stuff*/
 h3.welcome-message{
   transition: all 0.5s;
@@ -352,14 +351,10 @@ div.job-row{
   margin: 5vh auto;
 }
 
-
-
 .section{
   position: relative;
   min-width: 320px;
 }
-
-
 
 .biography{
   min-width: 100vw;
@@ -461,6 +456,10 @@ div.job-row{
   }
 }
 
-/**{
+.submit-button{
+  
+}
+
+*{
   border: 1px solid red;
-}*/
+}
