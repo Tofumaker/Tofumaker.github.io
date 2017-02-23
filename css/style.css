@@ -22,6 +22,11 @@
    .main_h {
      padding-top: 25px;
    }
+
+   .logo {
+     padding-top: -25px;
+   }
+
  }
 
  .open-nav {
@@ -129,7 +134,7 @@
 
  .row {
    width: 100%;
-   max-width: 940px;
+   /*max-width: 940px;*/
    margin: 0 auto;
    position: relative;
    padding: 0 2%;
@@ -192,7 +197,7 @@
  }
 
  .blur-image {
-   /*filter: blur(2px);*/
+   filter: blur(2px);
  }
 
  .mouse {
@@ -307,22 +312,38 @@ footer.page-footer {
   margin: 0;
 }
 
-
 /*custom stuff*/
 h3.welcome-message{
   transition: all 0.5s;
+}
+
+@media only screen and (min-width: 767px) {
+
+  .welcome-hide{
+    font-size: 0pt;
+    opacity: 0;
+    margin-top: 500px;
+  }
+
+  .lock-section{
+    position: fixed;
+    overflow: hidden;
+  }
+
+  .lock-bio{
+    max-height: 100vh;
+  }
 
 }
 
-.welcome-hide{
-  font-size: 0pt;
-  opacity: 0;
-  margin-top: 500px;
+@media only screen and (max-width: 766px) {
+  #projects-section {
+    margin-top: -35px;
+  }
 }
 
 img.job-icon{
   display: block;
-  margin: auto;
 }
 
 div.job-row{
@@ -332,22 +353,7 @@ div.job-row{
 
 .section{
   position: relative;
-}
-/*#bio-section{
-  position: relative;
-}
-
-#projects-section{
-  position: relative;
-}
-
-#contacts-section {
-  position: relative;
-}*/
-
-.lock-section{
-  position: fixed;
-  overflow: hidden;
+  min-width: 320px;
 }
 
 .biography{
@@ -432,8 +438,28 @@ div.job-row{
 
 .container{
   padding-top: 25px;
+  min-width: 300px;
 }
 
-.lock-bio{
-  /*max-height: 100vh;*/
+.icon-block img{
+  margin: auto;
+  display: block;
+}
+
+@media only screen and (max-width: 350px) {
+  .logo {
+    float: none;
+  }
+
+  .container{
+    margin: 10px;
+  }
+}
+
+.submit-button{
+  
+}
+
+*{
+  border: 1px solid red;
 }
