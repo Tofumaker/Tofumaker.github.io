@@ -340,6 +340,10 @@ h3.welcome-message{
   #projects-section {
     margin-top: -35px;
   }
+
+  .tint{
+    padding-bottom: 25px;
+  }
 }
 
 img.job-icon{
@@ -455,11 +459,3 @@ div.job-row{
     margin: 10px;
   }
 }
-
-.submit-button{
-
-}
-
-/**{
-  border: 1px solid red;
-}*/
