@@ -403,9 +403,22 @@ div.job-row{
 }
 
 #site-footer{
-  background-color: blue;
-  min-height: 20vh;
+
+  min-height: 15vh;
   position: relative;
+}
+
+.footer-background{
+  z-index: 1000;
+  background-image: url("../footer.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.footer-tint{
+  min-height: 15vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .projects-welcome-section{
