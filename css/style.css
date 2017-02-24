@@ -457,9 +457,9 @@ div.job-row{
 }
 
 .submit-button{
-  
+
 }
 
-*{
+/**{
   border: 1px solid red;
-}
+}*/
