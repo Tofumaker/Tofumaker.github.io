@@ -24,7 +24,7 @@
    }
 
    .logo {
-     padding-top: -25px;
+     margin-top: -25px;
    }
 
  }
@@ -88,11 +88,13 @@
      width: 100%;
    }
  }
+
  nav ul li {
    display: inline-block;
    margin-left: 35px;
    line-height: 1.5;
  }
+
  @media only screen and (max-width: 766px) {
    nav ul li {
      width: 100%;
@@ -426,6 +428,7 @@ div.job-row{
 
 .carousel{
   margin-top: 10vh;
+  border: 1px solid grey;
 }
 
 .project-bucketlist{
