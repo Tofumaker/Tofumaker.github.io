@@ -61,22 +61,22 @@ $(window).scroll(function() {
   if ($(window).scrollTop() >= $('#bio-section').offset().top-navheight) {
     $('.biography').addClass('lock-section');
     $('.biography').addClass('lock-bio');
-    $('.biography').css('top', navheight);
+    $('.biography').css('bottom', -navheight);
   } else{
     $('.biography').removeClass('lock-section');
     $('.biography').removeClass('lock-bio');
   }
-  
+
   if ($(window).scrollTop() >= $('#projects-section').offset().top-navheight) {
     $('.proyectos').addClass('lock-section');
-    $('.proyectos').css('top', navheight);
+    $('.proyectos').css('bottom', -navheight);
   } else{
     $('.proyectos').removeClass('lock-section');
   }
 
   if ($(window).scrollTop() >= $('#contacts-section').offset().top-navheight) {
     $('.contacts-section').addClass('lock-section');
-    $('.contacts-section').css('top', navheight);
+    $('.contacts-section').css('bottom', -navheight);
   } else {
     $('.contacts-section').removeClass('lock-section');
   }

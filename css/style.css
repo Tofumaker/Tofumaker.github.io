@@ -20,17 +20,19 @@
  }
  @media only screen and (max-width: 766px) {
    .main_h {
-     padding-top: 25px;
+     padding-top: 20px;
    }
 
    .logo {
-     margin-top: -25px;
+     position: fixed;
+     top: 0px;
+     /*margin-top: -25px;*/
    }
 
  }
 
  .open-nav {
-   max-height: 800px !important;
+   min-height: 350px !important;
  }
  .open-nav .mobile-toggle {
    transform: rotate(-90deg);
@@ -417,7 +419,7 @@ div.job-row{
 }
 
 .footer-container p{
-  margin-top: 5px;
+  margin: 5px;
   line-height: 1.25;
   text-align: justify;
 }
