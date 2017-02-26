@@ -159,12 +159,6 @@
    font-family: "Montserrat", sans-serif;
  }
 
- p {
-   margin-bottom: 20px;
-   font-size: 17px;
-   line-height: 2;
- }
-
  .content {
    padding: 50px 2% 250px;
  }
@@ -308,10 +302,6 @@ p {
   font-size: inherit;
 }
 
-footer.page-footer {
-  margin: 0;
-}
-
 /*custom stuff*/
 h3.welcome-message{
   transition: all 0.5s;
@@ -385,7 +375,7 @@ div.job-row{
 .proyectos-tint{
   min-width: 100vw;
   min-height: 100vh;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .contacts-section{
@@ -403,9 +393,8 @@ div.job-row{
 }
 
 #site-footer{
-
-  min-height: 15vh;
   position: relative;
+  margin-bottom: -25px;
 }
 
 .footer-background{
@@ -417,8 +406,18 @@ div.job-row{
 
 .footer-tint{
   min-height: 15vh;
-  width: 100vw;
-  background-color: rgba(0, 0, 0, 0.3);
+  width: inherit;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.footer-container{
+  padding: 5px 15px;
+}
+
+.footer-container p{
+  margin-top: 10px;
+  line-height: 1.25;
+  text-align: justify;
 }
 
 .projects-welcome-section{
