@@ -415,13 +415,22 @@ div.job-row{
 }
 
 .footer-container{
-  padding: 5px 15px;
+  padding: 2px 15px;
 }
 
 .footer-container p{
-  margin: 5px;
+  margin: 7px;
   line-height: 1.25;
-  text-align: justify;
+  text-align: center;
+}
+
+.footer-credits a{
+  color: white;
+  text-decoration: underline;
+}
+
+.footer-copyright{
+  margin-top: 0px;
 }
 
 .projects-welcome-section{
@@ -436,6 +445,10 @@ div.job-row{
 
 .carousel-container{
   margin: 5px 10px;
+}
+
+.carousel-fixed-item p {
+  margin: 0px;
 }
 
 .project-bucketlist{
