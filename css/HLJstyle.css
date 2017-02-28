@@ -1,0 +1,73 @@
+body{
+  margin: auto;
+
+}
+
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 4s linear forwards;
+}
+
+.path{
+  stroke-width: 10px;
+  fill:none;
+  fill-rule: evenodd;
+  stroke:red;
+  stroke-width:5px;
+  stroke-linecap:butt;
+  stroke-linejoin:miter;
+  stroke-opacity:1
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+#title-section{
+  background-image: url("../HeiLongJiang-Project/grassprint.jpg");
+  min-height: 100vh;
+  min-width: 100vw;
+  background-position: center;
+  background-size: cover;
+}
+
+#drone-footage{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100vw;
+  min-height: 100vh;
+  width: auto;
+  height: auto;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.title-tint{
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.5);
+  min-height: 100vh;
+  min-width: 100vw;
+  transition: all 3s;
+}
+
+.fade-out{
+  background-color: rgba(255, 255, 255, 1);
+  transition: all 3s;
+}
+
+.vid-fade-in{
+  background-color: rgba(255, 255, 255, 0);
+  transition: all 2s;
+}
+
+.title-container{
+  width: 585px;
+  height: 199.8px;
+  display: inline-block;
+  margin-left: 5vw;
+  margin-top: 60vh;
+  z-index: 100;
+}
