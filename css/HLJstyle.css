@@ -1,23 +1,44 @@
 body{
   margin: auto;
-
 }
 
-.path {
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  animation: dash 4s linear forwards;
-}
-
-.path{
-  stroke-width: 10px;
+path{
   fill:none;
-  fill-rule: evenodd;
+}
+.map-outline-path{
+  stroke:black;
+  stroke-width:3px;
+  stroke-opacity:1;
+  stroke-dasharray: 3700;
+  stroke-dashoffset: 3700;
+  animation: dash 3s linear paused;
+}
+
+.province-path{
+  stroke:#424242;
+  stroke-width:2px;
+  stroke-opacity:1;
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: paused;
+}
+
+.color-path{
+  stroke:red;
+  stroke-width:10px;
+  stroke-opacity:0.7;
+  stroke-dasharray: 1500;
+  stroke-dashoffset: 1500;
+  animation: paused;
+}
+
+.title-path {
   stroke:red;
   stroke-width:5px;
-  stroke-linecap:butt;
-  stroke-linejoin:miter;
-  stroke-opacity:1
+  stroke-opacity:1;
+  stroke-dasharray: 800;
+  stroke-dashoffset: 800;
+  animation: dash 3s linear forwards;
 }
 
 @keyframes dash {
@@ -26,20 +47,68 @@ body{
   }
 }
 
+.stop-scrolling{
+  height: 100%;
+  overflow: hidden;
+}
+
+
+#intro-section{
+  background-image: url("../HeiLongJiang-Project/canvas.jpeg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  min-height: 100vh;
+  min-width: 100vw;
+  padding-top: 5vh;
+}
+
+.map-container{
+  float: right;
+  width: 90vw;
+  height: 90vh;
+  border: 1px solid green;
+}
+
+#MapSvg{
+  margin-left: 5vw;
+  width: inherit;
+  height: inherit;
+}
+
+.intro-text{
+  max-width: 30vw;
+  border: 2px solid white;
+  border-radius: 25px;
+  z-index: 1000;
+  position: fixed;
+  top: 10vh;
+  left: 5vw;
+  padding: 5px 15px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.intro-text p{
+  text-align: justify;
+}
+
 #title-section{
+  position: relative;
   background-image: url("../HeiLongJiang-Project/grassprint.jpg");
   min-height: 100vh;
   min-width: 100vw;
   background-position: center;
   background-size: cover;
+  overflow: hidden;
+  border-bottom: 1px solid grey;
 }
 
 #drone-footage{
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 100vw;
-  min-height: 100vh;
+  min-width: inherit;
+  min-height: inherit;
   width: auto;
   height: auto;
   transform: translateX(-50%) translateY(-50%);
@@ -50,17 +119,17 @@ body{
   background-color: rgba(255, 255, 255, 0.5);
   min-height: 100vh;
   min-width: 100vw;
-  transition: all 3s;
+  transition: background-color 3s;
 }
 
 .fade-out{
   background-color: rgba(255, 255, 255, 1);
-  transition: all 3s;
+  transition: all 1s;
 }
 
 .vid-fade-in{
   background-color: rgba(255, 255, 255, 0);
-  transition: all 2s;
+  transition: all 1s;
 }
 
 .title-container{
@@ -69,5 +138,4 @@ body{
   display: inline-block;
   margin-left: 5vw;
   margin-top: 60vh;
-  z-index: 100;
 }
