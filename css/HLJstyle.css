@@ -67,7 +67,6 @@ path{
   float: right;
   width: 90vw;
   height: 90vh;
-  border: 1px solid green;
 }
 
 #MapSvg{
@@ -82,14 +81,26 @@ path{
   border-radius: 25px;
   z-index: 1000;
   position: fixed;
-  top: 10vh;
-  left: 5vw;
+  top: 5vh;
+  left: 10vw;
   padding: 5px 15px;
   background-color: rgba(255, 255, 255, 0.3);
+  transition: all 5s;
 }
 
 .intro-text p{
-  text-align: justify;
+  margin: 0;
+  text-align: left;
+  /*white-space: nowrap;*/
+  line-height: 1.2;
+  font-size: 16px;
+  overflow: hidden;
+  animation: type 0.5s;
+}
+
+@keyframes type {
+  from{ font-size: 0;}
+  to{ font-size: 16px; }
 }
 
 #title-section{
