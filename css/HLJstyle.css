@@ -70,7 +70,7 @@ path{
 }
 
 #MapSvg{
-  margin-left: 5vw;
+  /*margin-left: 5vw;*/
   width: inherit;
   height: inherit;
 }
@@ -85,14 +85,13 @@ path{
   left: 10vw;
   padding: 5px 15px;
   background-color: rgba(255, 255, 255, 0.3);
-  transition: all 5s;
+  transition: all 1s;
 }
 
 .intro-text p{
   margin: 0;
   text-align: left;
-  /*white-space: nowrap;*/
-  line-height: 1.2;
+  line-height: 1.4;
   font-size: 16px;
   overflow: hidden;
   animation: type 0.5s;
